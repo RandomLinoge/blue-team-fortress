@@ -1,1 +1,8 @@
-# Sample content for sysmonconfig-export.xml
+<Sysmon schemaversion="4.70">
+  <EventFiltering>
+    <ProcessCreate onmatch="include">
+      <Image condition="contains">powershell</Image>
+      <CommandLine condition="contains">-enc</CommandLine>
+    </ProcessCreate>
+  </EventFiltering>
+</Sysmon>
