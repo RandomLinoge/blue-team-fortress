@@ -1,0 +1,19 @@
+# Ignore Python caches
+__pycache__/
+*.py[cod]
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore zip and temp files
+*.zip
+*.tar
+*.bak
+*.tmp
+
+# Ignore system logs
+*.log
+
+# Ignore environment
+.env
