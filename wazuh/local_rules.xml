@@ -1,1 +1,7 @@
-# Sample content for local_rules.xml
+<group name="windows,sysmon,credential_access">
+  <rule id="100100" level="10">
+    <if_sid>61602</if_sid>
+    <match>procdump.exe.*lsass</match>
+    <description>LSASS Dump Attempt Detected</description>
+  </rule>
+</group>
