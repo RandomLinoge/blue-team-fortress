@@ -1,1 +1,10 @@
-# Sample content for kibana-dashboard.ndjson
+{
+  "title": "Blue Team Threat Detection",
+  "panelsJSON": "[{"type":"visualization","id":"sysmon-process-tree"}]",
+  "uiStateJSON": "{}",
+  "version": 1,
+  "timeRestore": true,
+  "kibanaSavedObjectMeta": {
+    "searchSourceJSON": "{"index":"winlogbeat-*","query":{"query":"","language":"lucene"}}"
+  }
+}
