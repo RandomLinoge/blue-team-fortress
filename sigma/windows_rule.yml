@@ -1,1 +1,13 @@
-# Sample content for windows_rule.yml
+title: Encoded PowerShell Command
+logsource:
+  product: windows
+  service: security
+detection:
+  selection:
+    EventID: 4688
+    CommandLine|contains: '-enc'
+  condition: selection
+level: high
+tags:
+  - attack.execution
+  - attack.t1059
